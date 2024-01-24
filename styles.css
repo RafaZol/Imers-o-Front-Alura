@@ -1,0 +1,231 @@
+body {
+    background-color: #000;
+}
+
+.sidebar {
+    position: fixed; /*sempre fixo*/
+    top: 0; /*sempre emcima*/
+    left: 0; /*sempre a esquerda*/
+    bottom: 0;
+    padding: 12px; /*espçamento em todos os lados*/
+    width: 300px;
+}
+
+.sidebar_nav {
+    background-color: #121212;
+    border-radius: 8px; /*Arredondameno*/
+    padding: 16px 0 0 16px; /*espaçamento por lado*/
+}
+
+.sidebar_nav .logo {
+    display: flex;
+    background: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.sidebar_nav .logo img {
+    width: 80px;
+}
+
+.sidebar_nav ul {
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+}
+
+.sidebar_nav ul li {
+    padding: 10px 0; /* vertical e horizontal*/
+}
+
+.sidebar_nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'DM Sans' sans-serif;
+}
+
+.sidebar_nav ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}  
+
+/*Biblioteca*/
+
+.sidebar_lib {
+    background-color: #121212;
+    border-radius: 8px;
+    display: flex; /*orientação*/
+    justify-content: space-between;/*posição justificada dos objetos com espaço*/
+    flex-direction: column;/*direção*/
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.sidebar_lib .sidebar_lib_content {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.sidebar_lib .lib_buttom {
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'DM Sans' sans-serif;
+    text-align: center; /*centralizar*/
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+    
+}
+
+.sidebar_lib .lib_buttom .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.sidebar_lib .fa-plus {
+    margin: 24px 10px;
+    cursor: pointer;
+}
+
+.section_playlist {
+    display: flex;
+    align-items: flex-start;/*alinhar*/
+    justify-content: space-between;
+    gap: 20px;/*tamanho do espaço do justify*/
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+.section_playlist_content {
+    display: flex;
+    flex-direction: column;    
+}
+
+.section_playlist_content .text{
+    padding-bottom: 14px;
+    color: #fff;    
+    font-family: 'DM Sans' sans-serif;
+}
+
+.section_playlist_content .title {
+    font-weight: 700;
+}
+
+.section_playlist_content .subtitle { 
+    font-weight: 500px;
+    font-size: 12px;
+}
+
+.section_playlist_content .section_buttom{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 12px;
+    width: 113px;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar .cookies {
+    margin: 25px 20px;
+}
+
+.sidebar .cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    size: 15px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.sidebar .cookies a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sidebar .languages_buttom {
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #b3b3b3;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+footer {
+    border-radius: 5px;
+    position: fixed;
+    bottom: 25px;
+    right: 0px;
+    left: 0px;
+    background-image: linear-gradient(to right, #af2898, #7f61c5, #5199f3);
+    padding: 15px 20px;
+    margin: 0px 12px 8px 12px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape ul li {
+    padding-bottom: 4px;
+}
+
+.rodape ul li span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.rodape il li a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.rodape_buttom {
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+}
